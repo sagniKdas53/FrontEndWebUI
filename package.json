@@ -1,0 +1,45 @@
+{
+  "name": "fewebui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run all",
+    "test": "echo \"Un Defined\" && exit 1",
+    "live": "live-server",
+    "sass": "sass --watch sass:css",
+    "all": "concurrently \"npm run sass\" \"npm run live\"",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* --out-dir='dist/img'",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^4.0.0",
+    "bootstrap-icons": "^1.7.1",
+    "bootstrap-social": "^5.1.1",
+    "concurrently": "^6.4.0",
+    "font-awesome": "^4.7.0",
+    "grunt-sass": "^3.1.0",
+    "imagemin": "^8.0.1",
+    "jit-grunt": "^0.10.0",
+    "jquery": "^3.3.1",
+    "less": "^2.7.2",
+    "onchange": "^7.1.0",
+    "popper.js": "^1.12.9",
+    "rimraf": "^3.0.2",
+    "time-grunt": "^2.0.0"
+  },
+  "devDependencies": {
+    "cssmin": "^0.4.3",
+    "htmlmin": "^0.0.7",
+    "node-sass": "^6.0.1",
+    "parallelshell": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
+  }
+}

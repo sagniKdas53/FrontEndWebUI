@@ -1,0 +1,7 @@
+{"scripts": {
+    "start": "npm run all",
+    "test": "echo \"Un Defined\" && exit 1",
+    "live": "live-server",
+    "sass": "sass --watch sass:css",
+    "all": "npm run parallelshell 'npm run sass' 'npm run live'"
+  }}

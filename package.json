@@ -26,19 +26,30 @@
     "font-awesome": "^4.7.0",
     "grunt-sass": "^3.1.0",
     "imagemin": "^8.0.1",
-    "jit-grunt": "^0.10.0",
     "jquery": "^3.3.1",
     "less": "^2.7.2",
     "onchange": "^7.1.0",
     "popper.js": "^1.12.9",
-    "rimraf": "^3.0.2",
-    "time-grunt": "^2.0.0"
+    "rimraf": "^3.0.2"
   },
   "devDependencies": {
     "cssmin": "^0.4.3",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-htmlmin": "^2.4.0",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-filerev": "^2.3.1",
+    "grunt-usemin": "^3.1.1",
     "htmlmin": "^0.0.7",
+    "jit-grunt": "^0.10.0",
     "node-sass": "^6.0.1",
     "parallelshell": "^3.0.2",
+    "time-grunt": "^1.4.0",
     "uglifyjs": "^2.4.11",
     "usemin-cli": "^0.5.1"
   }

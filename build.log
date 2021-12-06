@@ -1,0 +1,45 @@
+Running "clean:build" (clean) task
+>> 1 path cleaned.
+
+Running "copy:html" (copy) task
+Copied 1 file
+
+Running "copy:fonts" (copy) task
+Copied 6 files
+
+Running "imagemin:dynamic" (imagemin) task
+Minified 5 images (saved 103 kB - 24.6%)
+
+Running "useminPrepare:foo" (useminPrepare) task
+Configuration changed for cssmin, uglify
+
+Running "concat:dist" (concat) task
+
+Running "cssmin:dist" (cssmin) task
+>> No files created.
+
+Running "cssmin:generated" (cssmin) task
+>> 1 file created. 265.06 kB → 249.5 kB
+
+Running "uglify:dist" (uglify) task
+>> No files created.
+
+Running "filerev:release" (filerev) task
+Revved 1 file
+
+Running "usemin:html" (usemin) task
+Replaced 1 reference to assets
+
+Running "htmlmin:dist" (htmlmin) task
+Minified 1 files
+
+Done.
+
+
+Execution Time (2021-12-06 16:39:59 UTC+5:30)
+loading tasks                  143ms  ▇ 3%
+imagemin:dynamic                3.5s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 72%
+cssmin:generated               892ms  ▇▇▇▇▇▇ 18%
+loading grunt-contrib-htmlmin   79ms  ▇ 2%
+Total 4.8s
+
